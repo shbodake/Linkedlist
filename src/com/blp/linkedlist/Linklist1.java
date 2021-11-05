@@ -29,13 +29,22 @@ public class Linklist1 {
     }
 
 
-    public void print() {
-        if (head == null) {
+    public void print()
+    {
+        if (head == null)
+        {
             System.out.println("Linked List is Empty");
-        } else {
+        } else
+        {
             Node temp = head;
-            while (temp != null) {
-                System.out.print(temp.data+ " ");
+            while (temp != null)
+            {
+                if (temp.next != null)
+                {
+                    System.out.print(temp.data + " -> ");
+                    temp = temp.next;
+                } else
+                System.out.print(temp.data+ " -> ");
                 temp = temp.next;
             }
         }
