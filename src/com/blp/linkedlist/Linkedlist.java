@@ -8,7 +8,11 @@ public class Linkedlist {
             case 1:
                 Operation.addDataAtStart();
                 scanner.close();
+            case 2:
+                Operation.addDataAtEnd();
+                break;
         }
+        scanner.close();
     }
 
     }

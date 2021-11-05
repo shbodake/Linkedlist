@@ -8,4 +8,11 @@ public class Operation {
         linkedList.push(56);
         linkedList.print();
     }
+    public static void addDataAtEnd() {
+        Linklist1 linkedList = new Linklist1();
+        linkedList.append(56);
+        linkedList.append(30);
+        linkedList.append(70);
+        linkedList.print();
+    }
 }
