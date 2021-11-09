@@ -41,6 +41,15 @@ public class Linklist1 {
         return temp;
     }
 
+    public void  popLast () {
+        Node temp = head;
+        while (!temp.next.equals(tail)) {
+            temp = temp.next;
+        }
+        this.tail = temp;
+        temp.next = null;
+    }
+
     public void print()
     {
         if (head == null)
