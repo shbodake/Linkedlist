@@ -5,7 +5,8 @@ public class Linkedlist {
         Scanner scanner = new Scanner(System.in);
         Operation operation = new Operation();
         System.out.println("Enter 1 to add the data at the start\\n\" + \"Enter 2 to add the data at the end\\n\" +\n" +"\"Enter 3 to add the data at middle" + "Enter 4 to delete the first element\n" +
-                "Enter 5 to delete the last element\n" + "Enter 6 to find index number and node based on value");
+                "Enter 5 to delete the last element\n" + "Enter 6 to find index number and node based on value"
+                + "Enter 7 to insert data at given node\n");
         switch(scanner.nextInt()) {
             case 1:
                 Operation.addDataAtStart();
@@ -24,6 +25,9 @@ public class Linkedlist {
                 break;
             case 6:
                 operation.findNodeBasedOnValue();
+                break;
+            case 7:
+                operation.insertDataAtGivenNode();
                 break;
         }
         scanner.close();
