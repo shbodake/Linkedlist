@@ -1,6 +1,7 @@
 package com.blp.linkedlist;
 
 public class Operation {
+
     public static void addDataAtStart(){
         Linklist1 linkedList = new Linklist1();
         linkedList.push(70);
@@ -14,5 +15,23 @@ public class Operation {
         linkedList.append(30);
         linkedList.append(70);
         linkedList.print();
+    }
+    public void addDataAtMiddle() {
+        Linklist1 linkedList = new Linklist1();
+        Node secondNode =  linkedList.push(70);
+        Node firstNode =  linkedList.push(56);
+        Node newNode = new Node(30);
+        linkedList.print();
+        System.out.println("");
+        linkedList.insertInBetween(firstNode, newNode);
+        linkedList.print();
+    }
+    public void deleteFirstNode() {
+        Linklist1 linkedList = new Linklist1();
+        addDataAtStart();
+        System.out.println("");
+        Node deleteNode = linkedList.pop();
+        linkedList.print();
+
     }
 }
