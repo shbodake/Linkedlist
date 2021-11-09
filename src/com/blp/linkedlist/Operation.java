@@ -39,6 +39,10 @@ public class Operation {
         System.out.println("");
         linkedList.popLast();
         linkedList.print();
-
+    }
+    public void findNodeBasedOnValue() {
+        Linklist1 linkedList = new Linklist1();
+        addDataAtStart();
+        linkedList.findNode(30);
     }
 }
